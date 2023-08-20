@@ -12,8 +12,9 @@ spring:
       hibernate:
 #          show_sql: true        system out에 출력
         format_sql: true
+        default_batch_fetch_size: 100
 
 logging:
   level:
     org.hibernate.SQL: debug   # 로거를 이용해서 출력
-    org.hibernate.type: trace
+#    org.hibernate.type: trace # p6spy로 대체
