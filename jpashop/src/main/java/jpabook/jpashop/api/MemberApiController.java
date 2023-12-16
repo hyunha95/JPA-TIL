@@ -69,7 +69,6 @@ public class MemberApiController {
         private String name;
     }
 
-
     @Data
     static class UpdateMemberRequest {
         private String name;
